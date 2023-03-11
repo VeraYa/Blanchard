@@ -1,0 +1,177 @@
+.filter-choices {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.filter-choices:focus {
+  outline: none;
+}
+
+.filter-choices:last-child {
+  margin-bottom: 0;
+}
+
+.filter-choices.is-open {
+  overflow: visible;
+}
+
+.filter-choices.is-disabled .filter-choices__inner,
+.filter-choices.is-disabled .filter-choices__input {
+  background-color: #eaeaea;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.filter-choices.is-disabled .filter-choices__item {
+  cursor: not-allowed;
+}
+
+.filter-choices [hidden] {
+  display: none;
+}
+
+.filter-choices[data-type*=select-one] {
+  cursor: pointer;
+}
+
+.filter-choices[data-type*=select-one]::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -4px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  transform: rotate(45deg);
+  transform-origin: center;
+  pointer-events: none;
+}
+
+.filter-choices[data-type*=select-one].is-open::after {
+  transform: rotate(225deg) translate(-2px, -2px);
+}
+
+.filter-choices__inner {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.is-focused .filter-choices__inner, .is-open .filter-choices__inner, .filter-choices__inner:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.is-open .filter-choices__inner {
+  border-radius: 6px;
+}
+
+.filter-choices__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.filter-choices__list--single {
+  display: inline-block;
+  width: 100%;
+}
+
+.filter-choices__list--single .filter-choices__item {
+  width: 100%;
+}
+
+.filter-choices__list--dropdown, .filter-choices__list[aria-expanded] {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #999;
+  top: 100%;
+  margin-top: -1px;
+  border-radius: 6px;
+  overflow: hidden;
+  word-break: break-all;
+  will-change: visibility;
+}
+
+.is-active.filter-choices__list--dropdown, .is-active.filter-choices__list[aria-expanded] {
+  visibility: visible;
+}
+
+.filter-choices__list--dropdown .filter-choices__list, .filter-choices__list[aria-expanded] .filter-choices__list {
+  position: relative;
+  max-height: 300px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+}
+
+.filter-choices__list--dropdown .filter-choices__item, .filter-choices__list[aria-expanded] .filter-choices__item {
+  position: relative;
+  padding: 12px 15px;
+  color: #999;
+}
+
+.filter-choices__list--dropdown .filter-choices__item:not(:last-child) {
+  border-bottom: 1px solid;
+}
+
+@media (min-width: 640px) {
+
+  .filter-choices__list--dropdown .filter-choices__item--selectable, .filter-choices__list[aria-expanded] .filter-choices__item--selectable {
+    padding-right: 40px;
+  }
+
+  .filter-choices__list--dropdown .filter-choices__item--selectable::after, .filter-choices__list[aria-expanded] .filter-choices__item--selectable::after {
+    content: attr(data-select-text);
+    font-size: 12px;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.filter-choices__list--dropdown .filter-choices__item--selectable.is-highlighted, .filter-choices__list[aria-expanded] .filter-choices__item--selectable.is-highlighted {
+  background-color: rgba(255, 255, 255, 0.2);;
+}
+
+.filter-choices__item {
+  cursor: default;
+}
+
+.filter-choices__item--selectable {
+  cursor: pointer;
+}
+
+.filter-choices__item--disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+          user-select: none;
+  opacity: 0.5;
+}
+
+.filter-choices__input::-webkit-search-decoration, .filter-choices__input::-webkit-search-cancel-button, .filter-choices__input::-webkit-search-results-button, .filter-choices__input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.filter-choices__input::-ms-clear, .filter-choices__input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
