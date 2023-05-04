@@ -158,15 +158,15 @@
   /* hero */
 
   .banner__slide-1 {
-    background-image: url('/img/slider1-1024.jpg');
+    background-image: url('../img/slider1-1024.jpg');
   }
 
   .banner__slide-2 {
-    background-image: url('/img/slider2-1024.jpg');
+    background-image: url('../img/slider2-1024.jpg');
   }
 
   .banner__slide-3 {
-    background-image: url('/img/slider3-1024.jpg');
+    background-image: url('../img/slider3-1024.jpg');
   }
 
   .hero__content {
@@ -380,15 +380,15 @@
   /* hero */
 
   .banner__slide-1 {
-    background-image: url('/img/slider1-768.jpg');
+    background-image: url('../img/slider1-768.jpg');
   }
 
   .banner__slide-2 {
-    background-image: url('/img/slider2-768.jpg');
+    background-image: url('../img/slider2-768.jpg');
   }
 
   .banner__slide-3 {
-    background-image: url('/img/slider3-768.jpg');
+    background-image: url('../img/slider3-768.jpg');
   }
 
   .hero__content {
@@ -768,7 +768,7 @@
   .acc-item__btn {
     width: 30px;
     height: 30px;
-    background-image: url('/img/catalog-btn320.svg');
+    background-image: url('../img/catalog-btn320.svg');
   }
 
   .acc-item__bottom {
@@ -932,15 +932,15 @@
 @media (max-width: 420px) {
 
   .banner__slide-1 {
-    background-image: url('/img/slider1-320.jpg');
+    background-image: url('../img/slider1-320.jpg');
   }
 
   .banner__slide-2 {
-    background-image: url('/img/slider2-320.jpg');
+    background-image: url('../img/slider2-320.jpg');
   }
 
   .banner__slide-3 {
-    background-image: url('/img/slider3-320.jpg');
+    background-image: url('../img/slider3-320.jpg');
   }
 
   .gallery__slide::before {
