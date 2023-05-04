@@ -569,83 +569,83 @@ img, svg {
 }
 
 .dropdown__link1-1 {
-  background-image: url(/img/hb1.1.jpg);
+  background-image: url('../img/hb1.1.jpg');
 }
 
 .dropdown__link1-2 {
-  background-image: url(/img/hb1.2.jpg);
+  background-image: url('../img/hb1.2.jpg');
 }
 
 .dropdown__link1-3 {
-  background-image: url(/img/hb1.3.jpg);
+  background-image: url('../img/hb1.3.jpg');
 }
 
 .dropdown__link1-4 {
-  background-image: url(/img/hb1.4.jpg);
+  background-image: url('../img/hb1.4.jpg');
 }
 
 .dropdown__link2-1 {
-  background-image: url(/img/hb2.1.jpg);
+  background-image: url('../img/hb2.1.jpg');
 }
 
 .dropdown__link2-2 {
-  background-image: url(/img/hb2.2.jpg);
+  background-image: url('../img/hb2.2.jpg');
 }
 
 .dropdown__link2-3 {
-  background-image: url(/img/hb2.3.jpg);
+  background-image: url('../img/hb2.3.jpg');
 }
 
 .dropdown__link2-4 {
-  background-image: url(/img/hb2.4.jpg);
+  background-image: url('../img/hb2.4.jpg');
 }
 
 .dropdown__link3-1 {
-  background-image: url(/img/hb3.1.jpg);
+  background-image: url('../img/hb3.1.jpg');
 }
 
 .dropdown__link3-2 {
-  background-image: url(/img/hb3.2.jpg);
+  background-image: url('../img/hb3.2.jpg');
 }
 
 .dropdown__link3-3 {
-  background-image: url(/img/hb3.3.jpg);
+  background-image: url('../img/hb3.3.jpg');
 }
 
 .dropdown__link3-4 {
-  background-image: url(/img/hb3.4.jpg);
+  background-image: url('../img/hb3.4.jpg');
 }
 
 .dropdown__link4-1 {
-  background-image: url(/img/hb4.1.jpg);
+  background-image: url('../img/hb4.1.jpg');
 }
 
 .dropdown__link4-2 {
-  background-image: url(/img/hb4.2.jpg);
+  background-image: url('../img/hb4.2.jpg');
 }
 
 .dropdown__link4-3 {
-  background-image: url(/img/hb4.3.jpg);
+  background-image: url('../img/hb4.3.jpg');
 }
 
 .dropdown__link4-4 {
-  background-image: url(/img/hb4.4.jpg);
+  background-image: url('../img/hb4.4.jpg');
 }
 
 .dropdown__link5-1 {
-  background-image: url(/img/hb5.1.jpg);
+  background-image: url('../img/hb5.1.jpg');
 }
 
 .dropdown__link5-2 {
-  background-image: url(/img/hb5.2.jpg);
+  background-image: url('../img/hb5.2.jpg');
 }
 
 .dropdown__link5-3 {
-  background-image: url(/img/hb5.3.jpg);
+  background-image: url('../img/hb5.3.jpg');
 }
 
 .dropdown__link5-4 {
-  background-image: url(/img/hb5.4.jpg);
+  background-image: url('../img/hb5.4.jpg');
 }
 
 .dropdown__link::before {
@@ -865,15 +865,15 @@ img, svg {
 }
 
 .banner__slide-1 {
-  background-image: url('/img/slider1.jpg');
+  background-image: url('../img/slider1.jpg');
 }
 
 .banner__slide-2 {
-  background-image: url('/img/slider2.jpg');
+  background-image: url('../img/slider2.jpg');
 }
 
 .banner__slide-3 {
-  background-image: url('/img/slider3.jpg');
+  background-image: url('../img/slider3.jpg');
 }
 
 
@@ -960,7 +960,7 @@ img, svg {
 
 .gallery {
   background-color: var(--black-text-color);
-  background-image: url('/img/gallery-bg.jpg');
+  background-image: url('../img/gallery-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1112,7 +1112,7 @@ img, svg {
   opacity: 0;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("/img/gallery-hover.svg");
+  background-image: url("../img/gallery-hover.svg");
   background-repeat: no-repeat;
   background-size: 80px;
   background-position: center;
@@ -1398,7 +1398,7 @@ img, svg {
   outline: 0;
   border: 2px solid transparent;
   border-radius: 100%;
-  background-image: url('/img/catalog-btn.svg');
+  background-image: url('../img/catalog-btn.svg');
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -1562,7 +1562,7 @@ img, svg {
   border: 2px solid transparent;
   outline: none;
   border-radius: 100%;
-  background-image: url('/img/events-btn.svg');
+  background-image: url('../img/events-btn.svg');
   background-repeat: no-repeat;
   background-position: center left 57%;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
